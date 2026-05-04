@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Video</title>
+
+<style>
+html, body {
+    margin: 0;
+    height: 100%;
+    background: black;
+    overflow: hidden;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background: black;
+}
+</style>
+
+</head>
+<body>
+
+<video id="vid" playsinline>
+    <source src="video.webm" type="video/webm">
+</video>
+
+<script>
+const vid = document.getElementById("vid");
+
+async function start() {
+    try {
+        await vid.play();
+
+        if (document.documentElement.requestFullscreen) {
+            await document.documentElement.requestFullscreen();
+        }
+    } catch (e) {
+        // wait for user click
+        document.body.addEventListener("click", async () => {
+            await vid.play();
+            if (document.documentElement.requestFullscreen) {
+                document.documentElement.requestFullscreen();
+            }
+        }, { once: true });
+    }
+}
+
+window.onload = start;
+</script>
+
+</body>
+</html>

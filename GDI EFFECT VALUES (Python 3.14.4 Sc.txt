@@ -1,0 +1,64 @@
+GDI EFFECT VALUES (Python 3.14.4 Script)
+
+Change this line in your script:
+EFFECT = X
+
+---
+
+1 = Glitch Blocks
+Random rectangle distortions using XOR inversion.
+
+2 = Shake
+Screen jitter / shake effect.
+
+3 = Tunnel
+Recursive screen stretch / zoom distortion.
+
+4 = Lines
+Random diagonal line drawing across desktop.
+
+5 = Text Spam
+Random ERROR / GLITCH / VOID text appearing.
+
+6 = Bouncing Block
+Moving square that bounces around screen and inverts pixels.
+
+7 = Wave Distortion (FIXED)
+Smooth sine-wave screen tearing effect (left/right vertical shift).
+
+8 = Black & White Corruption Mode
+Heavy glitch blocks + scanlines + full-screen inversion flashes.
+
+---
+
+9 = Flash Strobe
+Rapid black/white full-screen flashing.
+
+10 = Pixel Blocks
+Heavy random inverted block corruption across screen.
+
+11 = Pull Effect
+Random screen pull left/right distortion.
+
+12 = Vertical Tears
+Column-based screen tearing strips.
+
+13 = Noise Shake
+Strong random jitter movement of entire screen.
+
+14 = Checker Invert
+Chessboard-style inversion pattern across screen.
+
+15 = Scan Sweep 
+Moving horizontal scanline inversion bar.
+
+16 = Trail Effect
+Repeated inverted stamps creating motion trails.
+
+17 = Pulse Invert
+Random full-screen inversion flashes.
+
+---
+
+Controls:
+ESC = Exit program immediately
